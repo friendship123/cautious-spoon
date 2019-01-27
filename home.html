@@ -7,14 +7,14 @@
      <style>
       body   {background-color: #C9F9FE !important;}
       
-     
+    
        button   {background-color: #FEA2EF !important;
                    color: #FEFEFE !important;
                     border-color: #FEA2EF !important;}
-   
+         
       a {text-decoration:none !important;
          color:white !important ;}
-      
+      /*
      @keyframes animatedBackground {
 	from { background-position: 0 0; }
 	to { background-position: 0 80%; }
@@ -30,11 +30,68 @@
 
 	animation: animatedBackground 40s linear infinite;
 }
+      */
       
       
-      
-      
-      
+      #animate-area{
+	      -webkit-animation: slideUpDown 23s infite linear;
+	      animation: slideUpDown 23s infite linear;
+	     }
+	     @-webkit-keyframes slideUpDown {
+	0% {
+		-webkit-transform: translate3d(0, 0px, 0);
+		transform: translate3d(0, 0px, 0);
+	}
+
+	25% {
+		-webkit-transform: translate3d(0, 160px, 0);
+		transform: translate3d(0, 160px, 0);
+	}
+
+	50% {
+		-webkit-transform: translate3d(0, 0px, 0);
+		transform: translate3d(0, 0px, 0);
+	}
+
+	75% {
+		-webkit-transform: translate3d(0, -160px, 0);
+		transform: translate3d(0, -160px, 0);
+	}
+
+	100% {
+		-webkit-transform: translate3d(0, 0px, 0);
+		transform: translate3d(0, 0px, 0);
+	}
+}
+
+@keyframes slideUpDown {
+	0% {
+		-webkit-transform: translate3d(0, 0px, 0);
+		transform: translate3d(0, 0px, 0);
+	}
+
+	25% {
+		-webkit-transform: translate3d(0, 160px, 0);
+		transform: translate3d(0, 160px, 0);
+	}
+
+	50% {
+		-webkit-transform: translate3d(0, 0px, 0);
+		transform: translate3d(0, 0px, 0);
+	}
+
+	75% {
+		-webkit-transform: translate3d(0, -160px, 0);
+		transform: translate3d(0, -160px, 0);
+	}
+
+	100% {
+		-webkit-transform: translate3d(0, 0px, 0);
+		transform: translate3d(0, 0px, 0);
+	}
+}
+
+
      #myemporium       {
       
       vertical-align: middle    !important;
@@ -55,7 +112,8 @@
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
  </head>
  <body>
-	 <div id="animate-area"></div>
+	 <div id="animate-area"><img src="http://ps6nyc.com/img-cloud.svg
+" width="94" height="82"</div>
 
     
   
